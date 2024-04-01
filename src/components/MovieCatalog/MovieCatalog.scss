@@ -1,0 +1,20 @@
+.movie-catalog {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+
+  .ant-card {
+    border-radius: 0px;
+
+    &-cover {
+      img {
+        border-radius: 0px;
+        height: 350px;
+      }
+    }
+
+    &-meta-title {
+      text-align: center;
+    }
+  }
+}

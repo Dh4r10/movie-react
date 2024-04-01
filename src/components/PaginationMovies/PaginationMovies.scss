@@ -1,0 +1,13 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px !important;
+
+  .rc-pagination-prev,
+  .rc-pagination-next {
+    button {
+      border-radius: 20px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.menu-top {
+  display: flex;
+
+  &__logo {
+    display: flex;
+    margin-right: 40px;
+
+    svg {
+      width: 40px;
+    }
+  }
+  ul {
+    width: 100%;
+  }
+
+  .ant-menu-overflow {
+    &-item {
+      transition: opacity 0.3s ease;
+    }
+  }
+}

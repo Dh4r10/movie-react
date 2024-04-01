@@ -1,0 +1,33 @@
+.modal-video {
+  width: 50% !important;
+  padding: 0;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.81);
+
+  .ant-modal-content {
+    height: 70vh;
+    background-color: #00000088;
+    border-radius: 0px;
+    .ant-modal-close {
+      color: #ffffffc1;
+      margin-right: 0px;
+      margin-top: 0px;
+
+      span {
+        font-size: 20px;
+      }
+    }
+
+    .ant-modal-body {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > div {
+        width: 90% !important;
+        height: 90% !important;
+      }
+    }
+  }
+}
