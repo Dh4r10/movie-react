@@ -13,3 +13,11 @@
     border-radius: 0px;
   }
 }
+
+.lista-movies {
+  min-height: calc(100vh - 124px - 60px - 55px);
+
+  .ant-row {
+    justify-content: center;
+  }
+}

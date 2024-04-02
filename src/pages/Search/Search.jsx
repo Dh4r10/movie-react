@@ -26,7 +26,6 @@ const Search = () => {
 
       setSearchValue(s);
       setMovieList(movies);
-      console.log(movies);
     })();
   }, [location.search]);
 
@@ -37,7 +36,6 @@ const Search = () => {
     const urlSearch = `?${queryString.stringify(urlParams)}`;
     navigate(urlSearch);
     setSearchValue(value);
-    console.log(urlParams);
   };
 
   return (
@@ -46,12 +44,54 @@ const Search = () => {
         <h1>Busca tu pelicula</h1>
         <Input value={searchValue} onChange={oneChangeSearch} />
       </Col>
-      {movieList.results && (
-        <Row>
-          <Col span={24}>
+      {movieList.results && searchValue ? (
+        movieList.results.length > 0 ? (
+          <Col span={24} className="lista-movies">
             <MovieCatalog movies={movieList} />
           </Col>
-        </Row>
+        ) : (
+          <Col
+            span={24}
+            className="lista-movies"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              margin: "0px",
+            }}
+          >
+            <Row>
+              <p
+                style={{
+                  fontSize: "15px",
+                }}
+              >
+                No se ha encontrado ningun resultado.
+              </p>
+            </Row>
+          </Col>
+        )
+      ) : (
+        <Col
+          span={24}
+          className="lista-movies"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            margin: "0px",
+          }}
+        >
+          <Row>
+            <p
+              style={{
+                fontSize: "15px",
+              }}
+            >
+              Aun no se ha realizado una busqueda.
+            </p>
+          </Row>
+        </Col>
       )}
       <Col span={24}>
         <Footer />
