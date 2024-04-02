@@ -28,7 +28,7 @@ function MovieCard(props) {
   const posterPath = `
   https://image.tmdb.org/t/p/original/${poster_path}`;
   return (
-    <Link to={`/movie/${id}`}>
+    <Link to={`/movie-react/movie/${id}`}>
       <Card
         hoverable
         style={{ width: 240 }}

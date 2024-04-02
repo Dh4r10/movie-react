@@ -20,11 +20,11 @@ function App() {
       </Header>
       <Content>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/newmovies/" element={<NewMovies />} />
-          <Route path="/popular" element={<Popular />} />
-          <Route path="/search" element={<Search />} />
-          <Route path="/movie/:id" element={<Movie />} />
+          <Route path="/movie-react" element={<Home />} />
+          <Route path="/movie-react/newmovies" element={<NewMovies />} />
+          <Route path="/movie-react/popular" element={<Popular />} />
+          <Route path="/movie-react/search" element={<Search />} />
+          <Route path="/movie-react/movie/:id" element={<Movie />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </Content>

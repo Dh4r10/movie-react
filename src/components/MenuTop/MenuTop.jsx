@@ -8,19 +8,19 @@ import "./MenuTop.scss";
 const MenuTop = () => {
   const items = [
     {
-      label: <Link to="/">Home</Link>,
+      label: <Link to="/movie-react">Home</Link>,
       key: "1",
     },
     {
-      label: <Link to="/newmovies">Ultimos lanzamientos</Link>,
+      label: <Link to="/movie-react/newmovies">Ultimos lanzamientos</Link>,
       key: "2",
     },
     {
-      label: <Link to="/popular">Populares</Link>,
+      label: <Link to="/movie-react/popular">Populares</Link>,
       key: "3",
     },
     {
-      label: <Link to="/search">Buscador</Link>,
+      label: <Link to="/movie-react/search">Buscador</Link>,
       key: "4",
     },
   ];

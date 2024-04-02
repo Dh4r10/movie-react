@@ -44,7 +44,7 @@ function Movie(props) {
         <div className="slider-movies__movie-info-description">
           <h2>{title}</h2>
           <p>{overview}</p>
-          <Link to={`/movie/${id}`}>
+          <Link to={`/movie-react/movie/${id}`}>
             <Button type="primary">Ver más</Button>
           </Link>
         </div>

@@ -8,7 +8,7 @@ const Error404 = () => {
     <div className="error404">
       <h1>Error 404</h1>
       <h2>Pagina no encontrada</h2>
-      <Link to="/">
+      <Link to="/movie-react">
         <h3>Volver al inicio</h3>
       </Link>
     </div>
